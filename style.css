@@ -1,0 +1,116 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+
+body{
+    background-color: #548687;
+    text-align: center;
+}
+
+.container{
+    height : 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+}
+
+.game{
+    height: 60vh;
+    width: 60vh;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    gap : 1.5vmin;
+    background: #575757;
+    border-radius: 1rem;
+    margin-bottom: 10px;
+}
+
+.box{
+    height: 18vmin;
+    width : 18vmin;
+    border-radius: 1rem;
+    border : none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color : #f0f0f0;
+}
+
+#reset-btn{
+    margin-top: -35px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #191913;
+    color :#fff;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+#new-btn{
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #191913;
+    color :#fff;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+#msg{
+    color: #f0f0f0;
+    font-size: 8vmin;
+}
+
+.msg-container{
+    height: 100vmin;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.hide{
+    display : none;
+}
+
+.Player{
+    /* background-color: #fff; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.player1{
+    color: #fff;
+    background-color: #b0413e;
+    border-radius: 3px;
+}
+
+.player2{
+    color: #fff;
+    background-color: #893168;
+    border-radius: 3px;
+}
+
+.blink {
+    animation: blink 1s linear infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
